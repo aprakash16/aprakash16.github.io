@@ -293,6 +293,18 @@ async function init() {
                 d3.select("form#checkbox-selection")
                     .select("input[value=Gasoline]")
                     .property("checked", true);
+
+                d3.select("p#dropdown-label")
+                    .property("style", "color:grey");
+                d3.select("select#dropdown-selection")
+                    .selectAll("option")
+                    .property("disabled", true)
+
+                d3.select("p#checkbox-label")
+                    .property("style", "color:grey");
+                d3.select("form#checkbox-selection")
+                    .selectAll("input")
+                    .property("disabled", true)
             }
 
             if (scene < 3) {
